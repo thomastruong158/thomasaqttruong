@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Truong - AI Innovator and Entrepreneur</title>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <meta name="description"
+        content="Thomas A.Q.T. Truong, MIT Innovator Under 35 in Europe for 2023 in AI. Pioneering AI solutions in sign language translation, content creation, and professional imaging.">
+
+    <meta name="keywords" content="Thomas Truong, AI Innovator, MIT Under 35, VocalSign, ThePenPilot, AIFacePro">
+
+    <!-- Home -->
+    <meta name="description"
+        content="Thomas A.Q.T. Truong: AI innovator revolutionizing communication with VocalSign, ThePenPilot, and AIFacePro. MIT Innovator Under 35 in Europe for 2023 in AI."
+        data-page="home">
+
+    <!-- About -->
+    <meta name="description"
+        content="Learn about Thomas A.Q.T. Truong's journey in AI innovation, education background, and mission to create inclusive AI solutions for global impact."
+        data-page="about">
+
+    <!-- Innovations -->
+    <meta name="description"
+        content="Discover Thomas Truong's key AI innovations: VocalSign for sign language translation, ThePenPilot for AI-assisted writing, and AIFacePro for professional portraits."
+        data-page="innovations">
+
+    <!-- Achievements -->
+    <meta name="description"
+        content="Thomas A.Q.T. Truong's achievements in AI, including the prestigious MIT Innovator Under 35 in Europe for 2023 award in Artificial Intelligence."
+        data-page="achievements">
+
+    <!-- Vision -->
+    <meta name="description"
+        content="Explore Thomas Truong's vision for AI: bridging communication gaps, empowering individuals, and fostering an inclusive digital ecosystem through innovative AI solutions."
+        data-page="vision">
+
+    <!-- Connect -->
+    <meta name="description"
+        content="Connect with Thomas A.Q.T. Truong to collaborate on AI projects, discuss speaking engagements, or explore partnerships in AI innovation and social impact."
+        data-page="connect">
+
+    <title>Thomas A.Q.T. Truong | AI Innovator, MIT Under 35 Award Winner</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         :root {
             --primary-color: #0071e3;
@@ -16,7 +56,7 @@
             --footer-background: #f5f5f7;
             --footer-text: #86868b;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
@@ -34,7 +74,7 @@
         }
 
         .container {
-            max-width: 980px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 22px;
         }
@@ -46,6 +86,7 @@
             top: 0;
             z-index: 9999;
             transition: background-color 0.3s ease;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
         }
 
         nav {
@@ -76,108 +117,181 @@
             color: var(--primary-color);
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-weight: 600;
         }
 
         h1 {
-            font-size: 56px;
-            line-height: 1.07143;
-            letter-spacing: -.005em;
+            font-size: 80px;
+            line-height: 1.05;
+            letter-spacing: -.015em;
+            background: linear-gradient(45deg, #0071e3, #00c7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         h2 {
-            font-size: 48px;
-            line-height: 1.08349;
-            letter-spacing: -.003em;
+            font-size: 56px;
+            line-height: 1.07143;
+            letter-spacing: -.005em;
             margin-bottom: 20px;
         }
 
         h3 {
-            font-size: 28px;
-            line-height: 1.1;
-            letter-spacing: 0em;
+            font-size: 32px;
+            line-height: 1.125;
+            letter-spacing: .004em;
             margin-bottom: 10px;
         }
 
         p {
-            font-size: 17px;
-            line-height: 1.47059;
-            letter-spacing: -.022em;
+            font-size: 19px;
+            line-height: 1.4211;
+            letter-spacing: .012em;
             margin-bottom: 20px;
         }
 
         .hero {
             text-align: center;
-            padding: 130px 0;
-            background-color: #000;
+            padding: 200px 0;
+            background: radial-gradient(ellipse at top, #1d1d1f, #000000);
             color: #f5f5f7;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(0, 113, 227, 0.2), rgba(0, 199, 255, 0.2));
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
         }
 
         .hero h1 {
-            margin-bottom: 6px;
+            margin-bottom: 10px;
         }
 
         .hero p {
-            font-size: 28px;
-            line-height: 1.10722;
+            font-size: 32px;
+            line-height: 1.125;
             font-weight: 400;
             letter-spacing: .004em;
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
+            background: linear-gradient(45deg, #ffffff, #f0f0f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         section {
-            padding: 100px 0;
+            padding: 130px 0;
             overflow: hidden;
         }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
+            gap: 40px;
         }
 
         .innovation-item {
-            background-color: var(--section-bg-color);
-            border-radius: 18px;
-            padding: 30px;
+            background: linear-gradient(145deg, #ffffff, #f0f0f3);
+            border-radius: 30px;
+            padding: 40px;
             text-align: center;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .innovation-item::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+            transform: rotate(30deg);
+            transition: transform 0.5s ease;
+        }
+
+        .innovation-item:hover::before {
+            transform: rotate(30deg) translate(50%, 50%);
         }
 
         .innovation-item:hover {
-            transform: scale(1.03);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
         }
 
         .innovation-item img {
             width: 100%;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .innovation-item:hover img {
+            transform: scale(1.05);
         }
 
         .cta-button {
             display: inline-block;
-            background-color: var(--primary-color);
+            background: linear-gradient(180deg, var(--primary-color), #005bbf);
             color: white;
-            padding: 12px 24px;
+            padding: 16px 32px;
             border-radius: 980px;
-            font-size: 17px;
-            line-height: 1.17648;
+            font-size: 19px;
+            line-height: 1.21053;
             font-weight: 400;
-            letter-spacing: -.022em;
+            letter-spacing: .012em;
             text-decoration: none;
             transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: all 0.5s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
         }
 
         .cta-button:hover {
-            background-color: var(--hover-color);
+            background: linear-gradient(180deg, #0077ed, #0060c9);
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         footer {
             background-color: var(--footer-background);
-            padding: 20px 0;
+            padding: 40px 0;
             font-size: 12px;
             line-height: 1.33337;
             font-weight: 400;
@@ -188,197 +302,1617 @@
         .specs {
             display: flex;
             justify-content: space-between;
-            margin-top: 60px;
+            margin-top: 80px;
         }
 
         .spec-item {
             text-align: center;
+            background: linear-gradient(145deg, #f0f0f3, #ffffff);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .spec-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
         }
 
         .spec-item h4 {
-            font-size: 40px;
-            line-height: 1.1;
-            font-weight: 600;
-            letter-spacing: 0em;
-            margin-bottom: 8px;
+            font-size: 56px;
+            line-height: 1.07143;
+            font-weight: 700;
+            letter-spacing: -.005em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #0071e3, #00c7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .spec-item p {
-            font-size: 14px;
-            line-height: 1.42859;
+            font-size: 17px;
+            line-height: 1.47059;
             font-weight: 400;
-            letter-spacing: -.016em;
+            letter-spacing: -.022em;
             color: #86868b;
         }
 
         ul.vision-list {
             list-style-type: none;
             padding-left: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         ul.vision-list li {
             position: relative;
             padding-left: 30px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 21px;
+            line-height: 1.381;
+            font-weight: 400;
+            letter-spacing: .011em;
         }
 
         ul.vision-list li:before {
             content: "•";
             color: var(--primary-color);
-            font-size: 20px;
+            font-size: 24px;
             position: absolute;
             left: 0;
         }
 
+        @media (max-width: 834px) {
+            .hero {
+                padding: 100px 0;
+            }
+
+            h1 {
+                font-size: 56px;
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 24px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .specs {
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+
+            .spec-item {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+
         @media (max-width: 734px) {
             .hero {
-                padding: 65px 0;
+                padding: 80px 0;
             }
-            h1 { font-size: 40px; }
-            h2 { font-size: 32px; }
-            h3 { font-size: 24px; }
-            .hero p { font-size: 21px; }
-            .grid { grid-template-columns: 1fr; }
-            .specs { flex-direction: column; gap: 30px; }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            .hero p {
+                font-size: 21px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .specs {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .spec-item {
+                flex-basis: 100%;
+            }
         }
 
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
 
         .fade-in.appear {
             opacity: 1;
             transform: translateY(0);
         }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 40px;
+            display: block;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .innovation-item img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .awards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+
+        .award-item {
+            text-align: center;
+            margin: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .award-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .award-item img {
+            width: 200px;
+            /* Increase from 120px */
+            height: 200px;
+            /* Increase from 120px */
+            object-fit: contain;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
+            transition: all 0.3s ease;
+        }
+
+        .award-item img.mit-award {
+            width: 800px;
+            /* Even larger for the MIT award */
+            height: 500px;
+            /* Even larger for the MIT award */
+        }
+
+        .award-item:hover img {
+            filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.2));
+            transform: scale(1.05);
+        }
+
+        #about,
+        #vision {
+            background: linear-gradient(180deg, #f2f2f7, #ffffff);
+        }
+
+        #innovations,
+        #achievements {
+            background: linear-gradient(180deg, #ffffff, #f2f2f7);
+        }
+
+        #connect {
+            background: radial-gradient(ellipse at bottom, #1d1d1f, #000000);
+            color: #f5f5f7;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #connect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(0, 113, 227, 0.1), rgba(0, 199, 255, 0.1));
+            z-index: 1;
+        }
+
+        #connect .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .teaser {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 40px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .teaser h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .teaser p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #f0f0f0;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        .education-item {
+            background: linear-gradient(145deg, #ffffff, #f0f0f3);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .education-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-item h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .education-item p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+
+        .education-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .education-item a:hover {
+            color: var(--hover-color);
+        }
+
+        .innovation-section {
+            padding: 120px 0;
+            overflow: hidden;
+        }
+
+        .innovation-section:nth-child(even) {
+            background-color: #f5f5f7;
+        }
+
+        .innovation-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .innovation-image {
+            flex: 1;
+        }
+
+        .innovation-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .innovation-details {
+            flex: 1;
+        }
+
+        .innovation-details ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .innovation-details li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .innovation-details li:before {
+            content: "•";
+            color: var(--primary-color);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .innovation-comparison {
+            background-color: #fff;
+            padding: 120px 0;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 40px;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 20px;
+            text-align: left;
+            border-bottom: 1px solid #d2d2d7;
+        }
+
+        .comparison-table th {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .innovation-content {
+                flex-direction: column;
+            }
+        }
+
+        .social-links {
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: var(--footer-text);
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .legal-info {
+            background-color: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .legal-info p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .legal-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .legal-info a:hover {
+            text-decoration: underline;
+        }
+
+        .connection-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .connection-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .connection-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .connection-item i {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .connection-item h3 {
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .connection-item p {
+            margin-bottom: 20px;
+            color: #f0f0f0;
+        }
+
+        .contact-info,
+        .collaboration-cta {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-info h3,
+        .collaboration-cta h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p,
+        .collaboration-cta p {
+            color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+
+        .collaboration-cta .cta-button {
+            margin-top: 20px;
+        }
+
+        .achievement-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .achievement-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .achievement-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        .app-stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .app-stat-item {
+            flex-basis: calc(33.333% - 20px);
+            background: linear-gradient(145deg, #ffffff, #f0f0f3);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .app-stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .app-stat-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .app-stat-item p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .app-stat-item ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .app-stat-item ul li {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .app-stat-item {
+                flex-basis: 100%;
+            }
+        }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "@id": "https://www.linkedin.com/in/thomasaqttruong/",
+          "dateCreated": "2024-01-01T12:00:00-05:00",
+          "dateModified": "2024-06-28T14:00:00-05:00",
+          "mainEntity": {
+            "@type": "Person",
+            "@id": "#thomasaqttruong",
+            "name": "Thomas A.Q.T. Truong",
+            "givenName": "Thomas",
+            "familyName": "Truong",
+            "additionalName": "A.Q.T.",
+            "alternateName": "thomasaqttruong",
+            "identifier": "MIT-U35-2023-AI",
+            "jobTitle": "AI Innovator",
+            "description": "MIT Innovator Under 35 in Europe for 2023 in AI, pioneering AI solutions in sign language translation, content creation, and professional imaging.",
+            "image": "https://media.licdn.com/dms/image/D4E03AQGzsM613JfvXw/profile-displayphoto-shrink_800_800/0/1710753720915?e=1724889600&v=beta&t=yUoMkI1D-25s-mPFxGukY2rtts2NJYOelARQPB2cOG4",
+            "interactionStatistic": [
+              {
+                "@type": "InteractionCounter",
+                "interactionType": "https://schema.org/FollowAction",
+                "userInteractionCount": 10000
+              },
+              {
+                "@type": "InteractionCounter",
+                "interactionType": "https://schema.org/LikeAction",
+                "userInteractionCount": 50000
+              }
+            ],
+            "agentInteractionStatistic": {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/WriteAction",
+              "userInteractionCount": 100
+            },
+            "sameAs": [
+              "https://www.linkedin.com/in/thomasaqttruong/",
+              "https://x.com/thomasaqttruong/",
+              "https://www.instagram.com/thomasaqttruong/",
+              "https://www.amazon.com/stores/author/B0D5GM78JV/",
+              "https://www.facebook.com/profile.php?id=100082970167754",
+              "https://www.innovatorsunder35.com/the-list/thomas-truong/",
+              "https://www.youtube.com/@thomasaqttruong",
+              "https://apps.apple.com/no/developer/thomas-truong/id1565815544",
+              "https://www.crunchbase.com/person/thomas-a-q-t-truong"
+            ],
+            "award": "MIT Innovator Under 35 in Europe for 2023 in AI",
+            "worksFor": [
+              {
+                "@id": "#vocalsign"
+              },
+              {
+                "@id": "#thepenpilot"
+              },
+              {
+                "@id": "#aifacepro"
+              }
+            ],
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Sorbonne University",
+                "sameAs": "https://www.sorbonne-universite.fr/"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "ISUP",
+                "sameAs": "https://isup.sorbonne-universite.fr/"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Panthéon-Sorbonne University",
+                "sameAs": "https://www.pantheonsorbonne.fr/"
+              }
+            ],
+            "knowsLanguage": ["en", "fr", "vi"],
+            "affiliation": [
+              {
+                "@type": "Organization",
+                "name": "MIT Technology Review",
+                "sameAs": "https://www.technologyreview.com/"
+              }
+            ],
+            "brand": [
+              {
+                "@type": "Brand",
+                "name": "VocalSign"
+              },
+              {
+                "@type": "Brand",
+                "name": "ThePenPilot"
+              },
+              {
+                "@type": "Brand",
+                "name": "AIFacePro"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "#vocalsign",
+          "name": "VocalSign",
+          "url": "https://apps.apple.com/us/app/vocalsign/id1642922240",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "iOS, iPadOS, macOS, visionOS",
+          "description": "AI-powered sign language translation app supporting 300+ sign languages, enabling real-time translation into voice, text, and images.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1000"
+          },
+          "author": {
+            "@id": "#thomasaqttruong"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "#thepenpilot",
+          "name": "ThePenPilot",
+          "url": "https://www.thepenpilot.com",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "iOS, iPadOS, macOS, visionOS",
+          "description": "AI-assisted content creation tool leveraging GPT-4-Turbo for authors, designed to simplify content creation for books, novels, scripts, and theses.",
+          "offers": {
+            "@type": "Offer",
+            "price": "9.99",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "ratingCount": "500"
+          },
+          "author": {
+            "@id": "#thomasaqttruong"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "#aifacepro",
+          "name": "AIFacePro",
+          "url": "https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360",
+          "applicationCategory": "PhotographyApplication",
+          "operatingSystem": "iOS, iPadOS, macOS, visionOS",
+          "description": "AI-powered professional portrait generator transforming selfies into hyper-realistic, customizable professional portraits.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "2000"
+          },
+          "author": {
+            "@id": "#thomasaqttruong"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
+
 <body>
     <header>
         <nav class="container">
-            <a href="#" style="font-size: 21px; font-weight: 600; color: var(--text-color); text-decoration: none;">Thomas Truong</a>
+            <a href="#" data-page="home"
+                style="font-size: 21px; font-weight: 600; color: var(--text-color); text-decoration: none;">Thomas
+                A.Q.T. Truong</a>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#innovations">Innovations</a></li>
-                <li><a href="#vision">Vision</a></li>
-                <li><a href="#connect">Connect</a></li>
+                <li><a href="/" data-page="home">Home</a></li>
+                <li><a href="/about" data-page="about">About</a></li>
+                <li><a href="/innovations" data-page="innovations">Innovations</a></li>
+                <li><a href="/achievements" data-page="achievements">Achievements</a></li>
+                <li><a href="/vision" data-page="vision">Vision</a></li>
+                <li><a href="/connect" data-page="connect">Connect</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1 class="fade-in">Thomas Truong</h1>
-                <p class="fade-in">MIT Innovator Under 35 in Europe for 2023 in AI</p>
-            </div>
-        </section>
+        <div id="home" class="page">
+            <section class="hero">
+                <div class="container">
+                    <img src="https://media.licdn.com/dms/image/D4E03AQGzsM613JfvXw/profile-displayphoto-shrink_800_800/0/1710753720915?e=1724889600&v=beta&t=yUoMkI1D-25s-mPFxGukY2rtts2NJYOelARQPB2cOG4"
+                        alt="Thomas A.Q.T. Truong - AI Innovator and MIT Under 35 Award Winner"
+                        class="profile-image fade-in">
+                    <h1 class="fade-in">Thomas A.Q.T. Truong - MIT AI Innovator Under 35 Europe</h1>
+                    <p class="fade-in">MIT Innovator Under 35 in Europe for 2023 in AI</p>
 
-        <section id="about">
-            <div class="container">
-                <h2 class="fade-in">About Me</h2>
-                <p class="fade-in">As an MIT Innovator Under 35 in Europe for 2023 in AI, I'm dedicated to harnessing artificial intelligence to break down barriers and democratize technology. My mission is to create a more inclusive, connected world where everyone can communicate effectively and access cutting-edge tools.</p>
-                <p class="fade-in">With a Master's in AI from Sorbonne University and ISUP, a Bachelor's in Applied Mathematics & Computer Science from Paris I: Panthéon-Sorbonne, and advanced certifications from Microsoft and Google, I bring a strong technical foundation to my innovative work. Fluent in French, English, and Vietnamese, my multicultural background drives a unique approach to developing globally-relevant AI solutions.</p>
-                <div class="specs fade-in">
-                    <div class="spec-item">
-                        <h4>300+</h4>
-                        <p>Sign Languages Supported</p>
-                    </div>
-                    <div class="spec-item">
-                        <h4>GPT-4</h4>
-                        <p>Powered Content Creation</p>
-                    </div>
-                    <div class="spec-item">
-                        <h4>AI</h4>
-                        <p>Professional Portraits</p>
+                    <div class="teaser fade-in">
+                        <h2>Revolutionizing Communication with AI</h2>
+                        <p>Discover how our innovations in VocalSign, ThePenPilot, and AIFacePro are changing lives.</p>
+                        <a href="/innovations" data-page="innovations" class="cta-button">Explore Innovations</a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section id="innovations">
-            <div class="container">
-                <h2 class="fade-in">Key Innovations</h2>
-                <div class="grid">
-                    <div class="innovation-item fade-in">
-                        <img src="/api/placeholder/400/300" alt="VocalSign Demo">
-                        <h3>VocalSign</h3>
-                        <p>A groundbreaking tool translating 300+ sign languages into voice, text, and images in real-time. VocalSign enables users to teach new signs, achieving unparalleled global compatibility and making interpretation affordable and accessible worldwide.</p>
-                        <a href="https://apps.apple.com/us/app/vocalsign/id1642922240" class="cta-button">Learn More</a>
-                    </div>
-                    <div class="innovation-item fade-in">
-                        <img src="/api/placeholder/400/300" alt="ThePenPilot Demo">
-                        <h3>ThePenPilot™</h3>
-                        <p>Leveraging GPT-4-Turbo technology to democratize high-quality content creation. This AI-powered tool simplifies the writing process, enabling authors to produce up to 200 pages of coherent, tailored content for books, novels, scripts, and theses.</p>
-                        <a href="https://www.thepenpilot.com" class="cta-button">Explore ThePenPilot</a>
-                    </div>
-                    <div class="innovation-item fade-in">
-                        <img src="/api/placeholder/400/300" alt="AIFacePro Demo">
-                        <h3>AIFacePro™</h3>
-                        <p>A revolutionary AI app transforming a single selfie into hyper-realistic, customizable professional portraits. Available on iPhone, iPad, Mac, and Vision Pro, AIFacePro offers unparalleled accuracy in facial feature reproduction, perfect for professional branding.</p>
-                        <a href="https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360" class="cta-button">Get AIFacePro</a>
+        <div id="about" class="page">
+            <section class="hero">
+                <div class="container">
+                    <h1 class="fade-in">About Thomas A.Q.T. Truong</h1>
+                    <p class="fade-in">MIT Innovator Under 35 in Europe for 2023 in AI</p>
+                </div>
+            </section>
+            <section class="profile-overview">
+                <div class="container">
+                    <div class="profile-content">
+                        <img src="https://media.licdn.com/dms/image/D4E03AQGzsM613JfvXw/profile-displayphoto-shrink_800_800/0/1710753720915?e=1724889600&v=beta&t=yUoMkI1D-25s-mPFxGukY2rtts2NJYOelARQPB2cOG4" alt="Thomas A.Q.T. Truong" class="profile-image fade-in">
+                        <div class="profile-text fade-in">
+                            <h2>Pioneering AI for Global Impact</h2>
+                            <p>Thomas A.Q.T. Truong is revolutionizing the AI landscape with innovations that bridge communication gaps and democratize technology. Recognized by MIT Technology Review, his work is shaping a more inclusive digital future.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            
+            <section class="innovation-highlights">
+                <div class="container">
+                    <h2 class="fade-in">Breakthrough Innovations</h2>
+                    <div class="innovation-grid">
+                        <div class="innovation-item fade-in">
+                            <h3>VocalSign</h3>
+                            <p>AI-powered translation for 300+ sign languages, breaking barriers in real-time communication.</p>
+                        </div>
+                        <div class="innovation-item fade-in">
+                            <h3>ThePenPilot™</h3>
+                            <p>Revolutionizing content creation with GPT-4-Turbo, empowering authors and creators worldwide.</p>
+                        </div>
+                        <div class="innovation-item fade-in">
+                            <h3>AIFacePro™</h3>
+                            <p>Transforming selfies into professional portraits, redefining personal branding with AI.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="expertise">
+                <div class="container">
+                    <h2 class="fade-in">Areas of Expertise</h2>
+                    <ul class="expertise-list fade-in">
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision</li>
+                        <li>Machine Learning</li>
+                        <li>Accessible Technology</li>
+                        <li>AI Ethics and Responsible Development</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="education">
+                <div class="container">
+                    <h2 class="fade-in">Educational Background</h2>
+                    <div class="education-grid">
+                        <div class="education-item fade-in">
+                            <h3>Sorbonne University (Paris VI) and ISUP</h3>
+                            <p>Master's in Engineering Statistics and Data Science (AI), 2020</p>
+                            <a href="https://isup.sorbonne-universite.fr/formations/filiere-data-science-ds" class="learn-more" target="_blank" rel="noopener noreferrer">Program Details</a>
+                        </div>
+                        <div class="education-item fade-in">
+                            <h3>Panthéon-Sorbonne University (Paris I)</h3>
+                            <p>Bachelor's in Applied Mathematics and Computer Science, 2017</p>
+                            <a href="https://formations.pantheonsorbonne.fr/fr/catalogue-des-formations/licence-L/licence-mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales-KBTEXDIC.html" class="learn-more" target="_blank" rel="noopener noreferrer">Program Details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="vision">
+                <div class="container">
+                    <h2 class="fade-in">Vision for AI</h2>
+                    <p class="vision-text fade-in">Thomas envisions a world where AI seamlessly enhances human capabilities, fostering inclusivity and driving positive societal change. His work focuses on creating AI solutions that are not just technologically advanced, but profoundly human-centric.</p>
+                </div>
+            </section>
+            
+            <section class="company-info">
+                <div class="container">
+                    <h2 class="fade-in">Company Profile</h2>
+                    <div class="company-details fade-in">
+                        <p><strong>Name:</strong> Thomas TRUONG</p>
+                        <p><strong>Structure:</strong> Individual Enterprise</p>
+                        <p><strong>SIREN:</strong> 898 832 571</p>
+                        <p><strong>Main Activity:</strong> Computer Programming (62.01Z)</p>
+                        <p><strong>Founded:</strong> April 1, 2021</p>
+                        <p><strong>Location:</strong> 70 RUE ALBERT, 75013 PARIS</p>
+                        <a href="https://annuaire-entreprises.data.gouv.fr/entreprise/thomas-truong-898832571" class="learn-more" target="_blank" rel="noopener noreferrer">View Official Details</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="cta">
+                <div class="container">
+                    <h2 class="fade-in">Shape the Future of AI</h2>
+                    <p class="fade-in">Join Thomas in pushing the boundaries of AI innovation and creating technology that matters.</p>
+                    <a href="#" data-page="connect" class="cta-button fade-in">Connect with Thomas</a>
+                </div>
+            </section>
+        </div>
 
-        <section id="vision">
-            <div class="container">
-                <h2 class="fade-in">Vision for AI</h2>
-                <p class="fade-in">I believe in AI's power to revolutionize our world:</p>
-                <ul class="vision-list fade-in">
-                    <li>Bridge communication gaps for people with disabilities</li>
-                    <li>Empower individuals and businesses with accessible AI tools</li>
-                    <li>Push the boundaries of human-AI interaction</li>
-                    <li>Foster a more inclusive digital ecosystem</li>
-                </ul>
-                <p class="fade-in">Through our innovations at Teachable AI, ThePenPilot, and AIFacePro, we're committed to creating a future where everyone can communicate, learn, and thrive. Our goal is to build an AI-powered world that's more accessible, inclusive, and empowering for all.</p>
-            </div>
-        </section>
+        <div id="innovations" class="page">
+            <section class="hero">
+                <div class="container">
+                    <h1 class="fade-in">Innovations</h1>
+                    <p class="fade-in">Groundbreaking AI solutions that transform communication, creativity, and
+                        professional imaging.</p>
+                </div>
+            </section>
+            <section class="innovation-section vocalsign">
+                <div class="container">
+                    <div class="innovation-content">
+                        <div class="innovation-details fade-in">
+                            <h2>VocalSign</h2>
+                            <h3>Break barriers. Communicate freely.</h3>
+                            <p>VocalSign harnesses the power of AI to translate over 300 sign languages into voice,
+                                text, and images in real-time. It's not just a translation tool; it's a bridge to
+                                universal communication.</p>
+                            <ul>
+                                <li>Real-time translation of 300+ sign languages</li>
+                                <li>Voice, text, and image output</li>
+                                <li>Customizable sign language libraries</li>
+                                <li>Teach and learn new signs within the app</li>
+                            </ul>
+                            <a href="https://apps.apple.com/us/app/vocalsign/id1642922240" class="cta-button"
+                                target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+                        </div>
+                        <div class="innovation-image fade-in">
+                            <a href="https://apps.apple.com/us/app/vocalsign/id1642922240" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/53/b4/f0/53b4f0ed-e1c4-f280-c2a9-48fd47518fd9/AppIcon-1x_U007epad-85-220.png/540x540bb.jpg"
+                                    alt="VocalSign App Icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section id="connect">
-            <div class="container" style="text-align: center;">
-                <h2 class="fade-in">Let's Connect</h2>
-                <p class="fade-in">If you're passionate about leveraging AI for social good, democratizing technology access, and shaping the future of human-AI collaboration, I invite you to connect. Together, we can create AI solutions that not only advance technology but also make a lasting, positive impact on society.</p>
-                <a href="https://www.linkedin.com/in/thomasaqttruong/" class="cta-button fade-in">Connect on LinkedIn</a>
-            </div>
-        </section>
+            <section class="innovation-section thepenpilot">
+                <div class="container">
+                    <div class="innovation-content">
+                        <div class="innovation-image fade-in">
+                            <img src="https://static.wixstatic.com/media/2df313_f82286bed20346488bda5bec97e1cd15~mv2.png/v1/fit/w_2500,h_1330,al_c/2df313_f82286bed20346488bda5bec97e1cd15~mv2.png"
+                                alt="ThePenPilot Logo">
+                        </div>
+                        <div class="innovation-details fade-in">
+                            <h2>ThePenPilot™</h2>
+                            <h3>Your AI writing companion.</h3>
+                            <p>ThePenPilot™ is revolutionizing content creation with advanced AI. Powered by
+                                GPT-4-Turbo, it's designed to assist authors in crafting compelling narratives with ease
+                                and precision.</p>
+                            <ul>
+                                <li>AI-powered content generation and editing</li>
+                                <li>Style mimicking for consistent tone</li>
+                                <li>Plot development assistance</li>
+                                <li>Seamless research integration</li>
+                            </ul>
+                            <a href="https://www.linkedin.com/company/penpilot" class="cta-button" target="_blank"
+                                rel="noopener noreferrer">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="innovation-section aifacepro">
+                <div class="container">
+                    <div class="innovation-content">
+                        <div class="innovation-details fade-in">
+                            <h2>AIFacePro™</h2>
+                            <h3>Professional portraits, redefined.</h3>
+                            <p>AIFacePro™ leverages cutting-edge AI to transform a single selfie into a diverse
+                                portfolio of professional portraits. Available across Apple platforms, it's changing the
+                                game in personal branding.</p>
+                            <ul>
+                                <li>Hyper-realistic portrait generation</li>
+                                <li>Customizable backgrounds and outfits</li>
+                                <li>Expression and pose adjustments</li>
+                                <li>Available on iPhone, iPad, Mac, and Vision Pro</li>
+                            </ul>
+                            <a href="https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360"
+                                class="cta-button" target="_blank" rel="noopener noreferrer">Download on the App
+                                Store</a>
+                        </div>
+                        <div class="innovation-image fade-in">
+                            <a href="https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/67/42/b66742b7-a5fc-4090-8255-7ed9c3e97a93/AppIcon-0-0-1x_U007epad-0-85-220.png/540x540bb.jpg"
+                                    alt="AIFacePro App Icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="innovation-comparison">
+                <div class="container">
+                    <h2 class="fade-in">Compare Innovations</h2>
+                    <div class="table-container fade-in">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>VocalSign</th>
+                                    <th>ThePenPilot™</th>
+                                    <th>AIFacePro™</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Primary Function</td>
+                                    <td>Sign Language Translation</td>
+                                    <td>AI-Assisted Writing</td>
+                                    <td>AI Portrait Generation</td>
+                                </tr>
+                                <tr>
+                                    <td>Core Technology</td>
+                                    <td>Computer Vision, NLP</td>
+                                    <td>GPT-4-Turbo</td>
+                                    <td>GAN, Computer Vision</td>
+                                </tr>
+                                <tr>
+                                    <td>Target Users</td>
+                                    <td>Deaf Community, Interpreters</td>
+                                    <td>Authors, Content Creators</td>
+                                    <td>Professionals, Individuals</td>
+                                </tr>
+                                <tr>
+                                    <td>Key Feature</td>
+                                    <td>300+ Sign Languages</td>
+                                    <td>Style Mimicking</td>
+                                    <td>Single Selfie Transformation</td>
+                                </tr>
+                                <tr>
+                                    <td>Platforms</td>
+                                    <td>iOS, iPadOS, macOS, visionOS</td>
+                                    <td>Web, iOS (coming soon)</td>
+                                    <td>iOS, iPadOS, macOS, visionOS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="container">
+                    <h2 class="fade-in">Experience the Future of AI</h2>
+                    <p class="fade-in">Our innovations are more than just apps—they're gateways to a more connected,
+                        creative, and professional world. Start your journey with us today.</p>
+                    <a href="#" data-page="connect" class="cta-button fade-in">Get in Touch</a>
+                </div>
+            </section>
+        </div>
+
+        <div id="achievements" class="page">
+            <section class="hero">
+                <div class="container">
+                    <h1 class="fade-in">Achievements</h1>
+                    <p class="fade-in">Recognizing innovation that shapes the future of AI and technology.</p>
+                </div>
+            </section>
+            <section class="main-achievement">
+                <div class="container">
+                    <div class="achievement-content">
+                        <div class="achievement-image fade-in">
+                            <img src="https://media.licdn.com/dms/image/D4E2DAQFSg0quXqnL2Q/profile-treasury-image-shrink_800_800/0/1719366835665?e=1720170000&v=beta&t=o3CaMSBNqPwJYKuChU2c1dBtxubSm2JHs_mCIwEXiu0"
+                                alt="MIT Innovator Under 35 in Europe for 2023 in AI Award Certificate for Thomas A.Q.T. Truong"
+                                class="award-image">
+                        </div>
+                        <div class="achievement-details fade-in">
+                            <h2>MIT Innovator Under 35 in Europe for 2023 in AI</h2>
+                            <p>Recognized by MIT Technology Review for groundbreaking contributions to artificial
+                                intelligence and its applications in improving communication and creativity.</p>
+                            <ul class="achievement-list">
+                                <li>Selected from a pool of exceptional nominees across Europe</li>
+                                <li>Acknowledged for innovative AI solutions in sign language translation, content
+                                    creation, and professional imaging</li>
+                                <li>Joins an elite group of young innovators shaping the future of technology</li>
+                            </ul>
+                            <a href="https://www.innovatorsunder35.com/the-list/thomas-truong/" class="cta-button"
+                                target="_blank" rel="noopener noreferrer">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="app-achievements">
+                <div class="container">
+                    <h2 class="fade-in">App Milestones</h2>
+                    <div class="app-stats">
+                        <div class="app-stat-item fade-in">
+                            <h4>VocalSign</h4>
+                            <p>"Breaking barriers in communication"</p>
+                            <ul>
+                                <li>Supports 300+ sign languages</li>
+                                <li>Real-time translation to voice, text, and images</li>
+                                <li>Available on iOS, iPadOS, macOS, and visionOS</li>
+                            </ul>
+                        </div>
+                        <div class="app-stat-item fade-in">
+                            <h4>ThePenPilot™</h4>
+                            <p>"Revolutionizing content creation"</p>
+                            <ul>
+                                <li>Powered by GPT-4-Turbo</li>
+                                <li>Assists in books, novels, scripts, and theses</li>
+                                <li>Advanced style mimicking and plot development</li>
+                            </ul>
+                        </div>
+                        <div class="app-stat-item fade-in">
+                            <h4>AIFacePro™</h4>
+                            <p>"Redefining professional portraits"</p>
+                            <ul>
+                                <li>Transforms selfies into professional headshots</li>
+                                <li>Customizable backgrounds and outfits</li>
+                                <li>Available across Apple platforms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="impact-section">
+                <div class="container">
+                    <h2 class="fade-in">Impact and Recognition</h2>
+                    <div class="impact-content fade-in">
+                        <p>Thomas A.Q.T. Truong's innovations have garnered attention for their potential to transform
+                            various sectors:</p>
+                        <ul>
+                            <li>Enhancing accessibility and communication for the deaf and hard of hearing community
+                            </li>
+                            <li>Empowering authors and content creators with AI-assisted tools</li>
+                            <li>Democratizing access to professional-quality portraits</li>
+                        </ul>
+                        <p>These achievements reflect a commitment to leveraging AI for social good and technological
+                            advancement.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="future-outlook">
+                <div class="container">
+                    <h2 class="fade-in">Looking Ahead</h2>
+                    <div class="outlook-content fade-in">
+                        <p>Building on these achievements, we're committed to:</p>
+                        <ul>
+                            <li>Expanding the capabilities of our AI-driven applications</li>
+                            <li>Exploring new frontiers in human-AI interaction</li>
+                            <li>Collaborating with industry leaders to drive innovation</li>
+                            <li>Continuing to develop AI solutions that address real-world challenges</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="container">
+                    <h2 class="fade-in">Join Us in Shaping the Future</h2>
+                    <p class="fade-in">Our achievements are just the beginning. Be part of the next breakthrough in AI
+                        innovation.</p>
+                    <a href="#" data-page="connect" class="cta-button fade-in">Get Involved</a>
+                </div>
+            </section>
+        </div>
+
+        <div id="vision" class="page">
+            <section class="hero">
+                <div class="container">
+                    <h1 class="fade-in">Vision for AI Innovation</h1>
+                    <p class="fade-in">Shaping a future where AI empowers, connects, and transforms lives.</p>
+                </div>
+            </section>
+            <section class="vision-overview">
+                <div class="container">
+                    <div class="vision-content">
+                        <div class="vision-text fade-in">
+                            <h2>Pioneering the Next Frontier of AI</h2>
+                            <p>At the heart of our vision lies a commitment to harness the transformative power of AI to
+                                create solutions that are not just technologically advanced, but profoundly
+                                human-centric. We envision a world where AI seamlessly integrates into daily life,
+                                enhancing human capabilities and fostering a more inclusive, connected global community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="key-pillars">
+                <div class="container">
+                    <h2 class="fade-in">Key Pillars of Our Vision</h2>
+                    <div class="pillar-grid">
+                        <div class="pillar-item fade-in">
+                            <h3>Bridging Communication Gaps</h3>
+                            <p>Developing AI solutions that transcend language barriers, enabling seamless communication
+                                for all, including those with disabilities.</p>
+                        </div>
+                        <div class="pillar-item fade-in">
+                            <h3>Democratizing AI Tools</h3>
+                            <p>Making advanced AI capabilities accessible to individuals and businesses, empowering
+                                creativity and productivity.</p>
+                        </div>
+                        <div class="pillar-item fade-in">
+                            <h3>Advancing Human-AI Interaction</h3>
+                            <p>Pushing the boundaries of how humans and AI systems collaborate, creating more intuitive
+                                and natural interfaces.</p>
+                        </div>
+                        <div class="pillar-item fade-in">
+                            <h3>Fostering Digital Inclusion</h3>
+                            <p>Ensuring that AI advancements benefit all segments of society, promoting equality in the
+                                digital age.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="innovation-focus">
+                <div class="container">
+                    <h2 class="fade-in">Our Innovation Focus</h2>
+                    <div class="focus-content fade-in">
+                        <p>Through our flagship innovations - VocalSign, ThePenPilot, and AIFacePro - we're already
+                            bringing elements of this vision to life. But our ambitions extend far beyond:</p>
+                        <ul>
+                            <li>Expanding VocalSign to become a universal communication platform</li>
+                            <li>Evolving ThePenPilot into an AI collaborator for all forms of creative expression</li>
+                            <li>Transforming AIFacePro into a comprehensive digital identity management tool</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="future-research">
+                <div class="container">
+                    <h2 class="fade-in">Future Research Directions</h2>
+                    <div class="research-grid">
+                        <div class="research-item fade-in">
+                            <h3>Advanced Natural Language Processing</h3>
+                            <p>Developing AI that understands and generates human language with unprecedented nuance and
+                                context-awareness.</p>
+                        </div>
+                        <div class="research-item fade-in">
+                            <h3>Next-Generation Computer Vision</h3>
+                            <p>Creating AI systems that can interpret and interact with the visual world in ways that
+                                match and exceed human capabilities.</p>
+                        </div>
+                        <div class="research-item fade-in">
+                            <h3>Ethical AI Development</h3>
+                            <p>Pioneering frameworks and methodologies to ensure AI systems are developed and deployed
+                                responsibly and ethically.</p>
+                        </div>
+                        <div class="research-item fade-in">
+                            <h3>Cognitive AI Systems</h3>
+                            <p>Exploring the frontiers of AI that can reason, learn, and adapt in ways that more closely
+                                mimic human cognition.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="commitment">
+                <div class="container">
+                    <div class="commitment-content fade-in">
+                        <h2>Our Commitment</h2>
+                        <p>As we pursue this vision, we remain committed to:</p>
+                        <ul>
+                            <li>Prioritizing user privacy and data security in all our innovations</li>
+                            <li>Collaborating with diverse stakeholders to ensure our AI solutions are inclusive and
+                                beneficial to all</li>
+                            <li>Continuously educating ourselves and others about the potential and implications of AI
+                                technology</li>
+                            <li>Advocating for responsible AI development and usage on a global scale</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="container">
+                    <h2 class="fade-in">Join Us in Shaping the Future of AI</h2>
+                    <p class="fade-in">Our vision for AI innovation is ambitious, but achievable with collaboration and
+                        shared purpose. Whether you're a potential partner, an AI enthusiast, or someone passionate
+                        about technology's potential to change lives, we invite you to be part of this journey.</p>
+                    <a href="#" data-page="connect" class="cta-button fade-in">Connect With Us</a>
+                </div>
+            </section>
+        </div>
+
+        <div id="connect" class="page">
+            <section>
+                <div class="container">
+                    <h2 class="fade-in">Connect with Thomas Truong</h2>
+                    <div class="connection-grid">
+                        <div class="connection-item fade-in">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>For inquiries and collaborations</p>
+                            <a href="mailto:thomas.trg158@gmail.com" class="cta-button">Contact via Email</a>
+                        </div>
+                        <div class="connection-item fade-in">
+                            <i class="fab fa-linkedin"></i>
+                            <h3>LinkedIn</h3>
+                            <p>Professional updates and networking</p>
+                            <a href="https://www.linkedin.com/in/thomasaqttruong/" class="cta-button" target="_blank"
+                                rel="noopener noreferrer">Connect on LinkedIn</a>
+                        </div>
+                        <div class="connection-item fade-in">
+                            <i class="fab fa-twitter"></i>
+                            <h3>X (Twitter)</h3>
+                            <p>Latest thoughts and industry insights</p>
+                            <a href="https://x.com/thomasaqttruong/" class="cta-button" target="_blank"
+                                rel="noopener noreferrer">Follow on X</a>
+                        </div>
+                        <div class="connection-item fade-in">
+                            <i class="fab fa-instagram"></i>
+                            <h3>Instagram</h3>
+                            <p>Behind-the-scenes and personal updates</p>
+                            <a href="https://www.instagram.com/thomasaqttruong/" class="cta-button" target="_blank"
+                                rel="noopener noreferrer">Follow on Instagram</a>
+                        </div>
+                    </div>
+                    <div class="contact-info fade-in">
+                        <h3>Additional Contact Information</h3>
+                        <p><strong>Business Address:</strong> 70 RUE ALBERT, 75013 PARIS, FRANCE</p>
+                        <p><strong>For Media Inquiries:</strong> Please contact via email for press kit and interview
+                            requests.</p>
+                    </div>
+                    <div class="collaboration-cta fade-in">
+                        <h3>Let's Innovate Together</h3>
+                        <p>If you're passionate about leveraging AI for social good, democratizing technology access,
+                            and shaping the future of human-AI collaboration, I invite you to connect. Together, we can
+                            create AI solutions that not only advance technology but also make a lasting, positive
+                            impact on society.</p>
+                        <a href="mailto:thomas.trg158@gmail.com" class="cta-button">Initiate a Collaboration</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="privacy-policy" class="page">
+            <section>
+                <div class="container">
+                    <h2 class="fade-in">Privacy Policy</h2>
+                    <p class="fade-in">Last updated: Jun 28th, 2024</p>
+
+                    <h3 class="fade-in">1. Introduction</h3>
+                    <p class="fade-in">Thomas A.Q.T. Truong ("we," "our," or "us") respects your privacy and is
+                        committed to protecting your personal data. This privacy policy will inform you about how we
+                        look after your personal data when you visit our website (regardless of where you visit it from)
+                        and tell you about your privacy rights and how the law protects you.</p>
+
+                    <h3 class="fade-in">2. Important Information and Who We Are</h3>
+                    <p class="fade-in">This privacy policy aims to give you information on how we collect and process
+                        your personal data through your use of this website, including any data you may provide through
+                        this website when you sign up for our newsletter, purchase a product or service, or take part in
+                        a contest.</p>
+
+                    <p class="fade-in">Controller: Thomas A.Q.T. Truong is the controller and responsible for your
+                        personal data. If you have any questions about this privacy policy, including any requests to
+                        exercise your legal rights, please contact us at [Your Contact Email].</p>
+
+                    <h3 class="fade-in">3. The Data We Collect About You</h3>
+                    <p class="fade-in">Personal data, or personal information, means any information about an individual
+                        from which that person can be identified. We may collect, use, store and transfer different
+                        kinds of personal data about you which we have grouped together as follows:</p>
+                    <ul class="fade-in">
+                        <li>Identity Data includes first name, last name, username or similar identifier.</li>
+                        <li>Contact Data includes email address and telephone numbers.</li>
+                        <li>Technical Data includes internet protocol (IP) address, your login data, browser type and
+                            version, time zone setting and location, browser plug-in types and versions, operating
+                            system and platform, and other technology on the devices you use to access this website.
+                        </li>
+                        <li>Usage Data includes information about how you use our website, products and services.</li>
+                        <li>Marketing and Communications Data includes your preferences in receiving marketing from us
+                            and our third parties and your communication preferences.</li>
+                    </ul>
+
+                    <h3 class="fade-in">4. How We Use Your Personal Data</h3>
+                    <p class="fade-in">We will only use your personal data when the law allows us to. Most commonly, we
+                        will use your personal data in the following circumstances:</p>
+                    <ul class="fade-in">
+                        <li>Where we need to perform the contract we are about to enter into or have entered into with
+                            you.</li>
+                        <li>Where it is necessary for our legitimate interests (or those of a third party) and your
+                            interests and fundamental rights do not override those interests.</li>
+                        <li>Where we need to comply with a legal obligation.</li>
+                    </ul>
+
+                    <h3 class="fade-in">5. Data Security</h3>
+                    <p class="fade-in">We have put in place appropriate security measures to prevent your personal data
+                        from being accidentally lost, used or accessed in an unauthorised way, altered or disclosed. In
+                        addition, we limit access to your personal data to those employees, agents, contractors and
+                        other third parties who have a business need to know.</p>
+
+                    <h3 class="fade-in">6. Data Retention</h3>
+                    <p class="fade-in">We will only retain your personal data for as long as reasonably necessary to
+                        fulfil the purposes we collected it for, including for the purposes of satisfying any legal,
+                        regulatory, tax, accounting or reporting requirements.</p>
+
+                    <h3 class="fade-in">7. Your Legal Rights</h3>
+                    <p class="fade-in">Under certain circumstances, you have rights under data protection laws in
+                        relation to your personal data. These include the right to:</p>
+                    <ul class="fade-in">
+                        <li>Request access to your personal data.</li>
+                        <li>Request correction of your personal data.</li>
+                        <li>Request erasure of your personal data.</li>
+                        <li>Object to processing of your personal data.</li>
+                        <li>Request restriction of processing your personal data.</li>
+                        <li>Request transfer of your personal data.</li>
+                        <li>Right to withdraw consent.</li>
+                    </ul>
+
+                    <h3 class="fade-in">8. Changes to the Privacy Policy</h3>
+                    <p class="fade-in">We keep our privacy policy under regular review. This version was last updated on
+                        [Current Date]. Historic versions can be obtained by contacting us.</p>
+
+                    <h3 class="fade-in">9. Contact Us</h3>
+                    <p class="fade-in">If you have any questions about this privacy policy or our privacy practices,
+                        please contact us in the following ways:</p>
+                    <p class="fade-in">Email address: <a
+                            href="mailto:thomas.trg158@gmail.com">thomas.trg158@gmail.com</a><br>
+                        Postal address: 70 RUE ALBERT, 75013 PARIS, FRANCE</p>
+
+                    <p class="fade-in">You have the right to make a complaint at any time to the Commission Nationale de
+                        l'Informatique et des Libertés (CNIL), the French supervisory authority for data protection
+                        issues (www.cnil.fr). We would, however, appreciate the chance to deal with your concerns before
+                        you approach the CNIL, so please contact us in the first instance.</p>
+                </div>
+            </section>
+        </div>
+
+        <div id="terms-of-use" class="page">
+            <section>
+                <div class="container">
+                    <h2 class="fade-in">Terms of Use</h2>
+                    <p class="fade-in">Last updated: Jun 28th, 2024</p>
+
+                    <h3 class="fade-in">1. Introduction</h3>
+                    <p class="fade-in">These Terms of Use govern your use of the website operated by Thomas A.Q.T.
+                        Truong ("we," "our," or "us") and any related services, including any content, functionality,
+                        and services offered on or through www.thomastruong.ai (the "Website").</p>
+
+                    <h3 class="fade-in">2. Acceptance of the Terms of Use</h3>
+                    <p class="fade-in">By using the Website, you accept and agree to be bound and abide by these Terms
+                        of Use and our Privacy Policy, incorporated herein by reference. If you do not want to agree to
+                        these Terms of Use or the Privacy Policy, you must not access or use the Website.</p>
+
+                    <h3 class="fade-in">3. Changes to the Terms of Use</h3>
+                    <p class="fade-in">We may revise and update these Terms of Use from time to time in our sole
+                        discretion. All changes are effective immediately when we post them. Your continued use of the
+                        Website following the posting of revised Terms of Use means that you accept and agree to the
+                        changes.</p>
+
+                    <h3 class="fade-in">4. Accessing the Website and Account Security</h3>
+                    <p class="fade-in">We reserve the right to withdraw or amend this Website, and any service or
+                        material we provide on the Website, in our sole discretion without notice. We will not be liable
+                        if for any reason all or any part of the Website is unavailable at any time or for any period.
+                    </p>
+
+                    <h3 class="fade-in">5. Intellectual Property Rights</h3>
+                    <p class="fade-in">The Website and its entire contents, features, and functionality (including but
+                        not limited to all information, software, text, displays, images, video, and audio, and the
+                        design, selection, and arrangement thereof) are owned by Thomas A.Q.T. Truong, its licensors, or
+                        other providers of such material and are protected by French and international copyright,
+                        trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+
+                    <h3 class="fade-in">6. Prohibited Uses</h3>
+                    <p class="fade-in">You may use the Website only for lawful purposes and in accordance with these
+                        Terms of Use. You agree not to use the Website:</p>
+                    <ul class="fade-in">
+                        <li>In any way that violates any applicable federal, state, local, or international law or
+                            regulation.</li>
+                        <li>To transmit, or procure the sending of, any advertising or promotional material, including
+                            any "junk mail," "chain letter," "spam," or any other similar solicitation.</li>
+                        <li>To impersonate or attempt to impersonate the Company, a Company employee, another user, or
+                            any other person or entity.</li>
+                        <li>To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the
+                            Website, or which, as determined by us, may harm the Company or users of the Website or
+                            expose them to liability.</li>
+                    </ul>
+
+                    <h3 class="fade-in">7. User Contributions</h3>
+                    <p class="fade-in">The Website may contain message boards, chat rooms, personal web pages or
+                        profiles, forums, bulletin boards, and other interactive features that allow users to post,
+                        submit, publish, display, or transmit to other users or other persons content or materials on or
+                        through the Website. All User Contributions must comply with the Content Standards set out in
+                        these Terms of Use.</p>
+
+                    <h3 class="fade-in">8. Monitoring and Enforcement; Termination</h3>
+                    <p class="fade-in">We have the right to:</p>
+                    <ul class="fade-in">
+                        <li>Remove or refuse to post any User Contributions for any or no reason in our sole discretion.
+                        </li>
+                        <li>Take any action with respect to any User Contribution that we deem necessary or appropriate
+                            in our sole discretion.</li>
+                        <li>Terminate or suspend your access to all or part of the Website for any or no reason,
+                            including without limitation, any violation of these Terms of Use.</li>
+                    </ul>
+
+                    <h3 class="fade-in">9. Content Standards</h3>
+                    <p class="fade-in">These content standards apply to any and all User Contributions and use of
+                        Interactive Services. User Contributions must in their entirety comply with all applicable
+                        federal, state, local, and international laws and regulations.</p>
+
+                    <h3 class="fade-in">10. Copyright Infringement</h3>
+                    <p class="fade-in">If you believe that any User Contributions violate your copyright, please contact
+                        us at [Your Contact Email].</p>
+
+                    <h3 class="fade-in">11. Reliance on Information Posted</h3>
+                    <p class="fade-in">The information presented on or through the Website is made available solely for
+                        general information purposes. We do not warrant the accuracy, completeness, or usefulness of
+                        this information. Any reliance you place on such information is strictly at your own risk.</p>
+
+                    <h3 class="fade-in">12. Links from the Website</h3>
+                    <p class="fade-in">If the Website contains links to other sites and resources provided by third
+                        parties, these links are provided for your convenience only. We have no control over the
+                        contents of those sites or resources, and accept no responsibility for them or for any loss or
+                        damage that may arise from your use of them.</p>
+
+                    <h3 class="fade-in">13. Geographic Restrictions</h3>
+                    <p class="fade-in">The owner of the Website is based in France. We provide this Website for use only
+                        by persons located in France. We make no claims that the Website or any of its content is
+                        accessible or appropriate outside of France.</p>
+
+                    <h3 class="fade-in">14. Disclaimer of Warranties</h3>
+                    <p class="fade-in">You understand that we cannot and do not guarantee or warrant that files
+                        available for downloading from the internet or the Website will be free of viruses or other
+                        destructive code. You are responsible for implementing sufficient procedures and checkpoints to
+                        satisfy your particular requirements for anti-virus protection and accuracy of data input and
+                        output, and for maintaining a means external to our site for any reconstruction of any lost
+                        data.</p>
+
+                    <h3 class="fade-in">15. Limitation on Liability</h3>
+                    <p class="fade-in">To the fullest extent provided by law, in no event will the company, its
+                        affiliates, or their licensors, service providers, employees, agents, officers, or directors be
+                        liable for damages of any kind, under any legal theory, arising out of or in connection with
+                        your use, or inability to use, the website, any websites linked to it, any content on the
+                        website or such other websites, including any direct, indirect, special, incidental,
+                        consequential, or punitive damages.</p>
+
+                    <h3 class="fade-in">16. Governing Law and Jurisdiction</h3>
+                    <p class="fade-in">These Terms of Use and any dispute or claim arising out of, or related to, them,
+                        their subject matter or their formation (in each case, including non-contractual disputes or
+                        claims) shall be governed by and construed in accordance with the laws of France. Any legal
+                        suit, action, or proceeding arising out of, or related to, these Terms of Use or the Website
+                        shall be instituted exclusively in the courts of Paris, France.</p>
+
+                    <h3 class="fade-in">17. Waiver and Severability</h3>
+                    <p class="fade-in">No waiver by the Company of any term or condition set out in these Terms of Use
+                        shall be deemed a further or continuing waiver of such term or condition or a waiver of any
+                        other term or condition, and any failure of the Company to assert a right or provision under
+                        these Terms of Use shall not constitute a waiver of such right or provision.</p>
+
+                    <h3 class="fade-in">18. Entire Agreement</h3>
+                    <p class="fade-in">The Terms of Use and our Privacy Policy constitute the sole and entire agreement
+                        between you and Thomas A.Q.T. Truong regarding the Website and supersede all prior and
+                        contemporaneous understandings, agreements, representations, and warranties, both written and
+                        oral, regarding the Website.</p>
+
+                    <h3 class="fade-in">19. Contact Us</h3>
+                    <p class="fade-in">To contact us about these Terms of Use, please email us at <a
+                            href="mailto:thomas.trg158@gmail.com">thomas.trg158@gmail.com</a>.</p>
+                </div>
+            </section>
+        </div>
+
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Thomas Truong. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/thomasaqttruong/" target="_blank" rel="noopener noreferrer"
+                    title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/thomasaqttruong/" target="_blank" rel="noopener noreferrer"
+                    title="X (formerly Twitter)"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/thomasaqttruong/" target="_blank" rel="noopener noreferrer"
+                    title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100082970167754" target="_blank"
+                    rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@thomasaqttruong" target="_blank" rel="noopener noreferrer"
+                    title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 Thomas A.Q.T. Truong. All rights reserved.</p>
             <p>
-                <a href="#">Privacy Policy</a> | 
-                <a href="#">Terms of Use</a> | 
-                <a href="#">Contact</a>
+                <a href="#" data-page="privacy-policy">Privacy Policy</a> |
+                <a href="#" data-page="terms-of-use">Terms of Use</a> |
+                <a href="#" data-page="connect">Contact</a>
             </p>
         </div>
     </footer>
 
     <script>
-        const faders = document.querySelectorAll('.fade-in');
-        const appearOptions = {
-            threshold: 0.1,
-            rootMargin: "0px 0px -100px 0px"
-        };
+        document.addEventListener('DOMContentLoaded', function () {
+            const pages = document.querySelectorAll('.page');
+            const navLinks = document.querySelectorAll('a[data-page]');
 
-        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                    return;
-                } else {
-                    entry.target.classList.add('appear');
-                    appearOnScroll.unobserve(entry.target);
-                }
+            function showPage(pageId = 'home') {
+                const validPages = ['home', 'about', 'innovations', 'achievements', 'vision', 'connect', 'privacy-policy', 'terms-of-use'];
+                pageId = validPages.includes(pageId) ? pageId : 'home';
+                pages.forEach(page => {
+                    page.style.display = page.id === pageId ? 'block' : 'none';
+                });
+                scrollToTop(); // Add this line
+            }
+            const isLocalFile = window.location.protocol === 'file:';
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const pageId = this.getAttribute('data-page');
+                    showPage(pageId);
+                    if (!isLocalFile) {
+                        history.pushState(null, '', this.getAttribute('href'));
+                    }
+                    scrollToTop(); // Add this line
+                });
             });
-        }, appearOptions);
+            // Handle initial load and browser back/forward
+            window.addEventListener('popstate', function () {
+                const path = location.pathname.split('/').pop().split('.')[0];
+                const pageId = path === '' ? 'home' : path;
+                showPage(pageId);
+            });
 
-        faders.forEach(fader => {
-            appearOnScroll.observe(fader);
+            // Show initial page
+            if (isLocalFile) {
+                showPage('home');
+            } else {
+                const initialPath = location.pathname.split('/').pop().split('.')[0];
+                const initialPageId = initialPath === '' ? 'home' : initialPath;
+                showPage(initialPageId);
+            }
+
+            // Fade-in effect
+            const faders = document.querySelectorAll('.fade-in');
+            const appearOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -100px 0px"
+            };
+
+            const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add('appear');
+                        appearOnScroll.unobserve(entry.target);
+                    }
+                });
+            }, appearOptions);
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
         });
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
     </script>
 </body>
+
 </html>
