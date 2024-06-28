@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://jolly-meadow-0c3b4751e.5.azurestaticapps.net/sitemap.xml
+Sitemap: https://zealous-wave-0824b701e.5.azurestaticapps.net/sitemap.xml
