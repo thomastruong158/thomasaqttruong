@@ -64,6 +64,9 @@
         data-page="connect">
 
     <title>Thomas A.Q.T. Truong | AI Innovator, MIT Under 35 Award Winner</title>
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.min.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls@5.15.0/dist/videojs-contrib-hls.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -1052,14 +1055,14 @@
 
         .video-container {
             position: relative;
+            width: 100%;
             padding-bottom: 56.25%;
-            /* 16:9 aspect ratio */
+            /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
-            max-width: 100%;
         }
 
-        .video-container iframe {
+        .video-container .video-js {
             position: absolute;
             top: 0;
             left: 0;
@@ -1532,11 +1535,17 @@
                         <p>In a recent appearance on French TV show "Check Up Santé" broadcast on BFM Business, I had
                             the opportunity to demonstrate to Dr. Fabien GUEZ a groundbreaking improvement in AI hand
                             action recognition:</p>
-                        <div class="video-container">
-                            <iframe
-                                src="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/876450612001/3eb4fb58-5b82-4bdb-84e8-c5416db6d945/10s/master.m3u8?fastly_token=NjZhNDhiZmRfMDUzZmQ1MjVmODFjNGJkNTNiYjZjMGRhZjJjNzliY2Y5ZjgwZWQ1MmZhNDUwN2ZlMGJjMTljN2RlN2Y2ZDVhZg%3D%3D"
-                                frameborder="0" allowfullscreen allow="autoplay" loading="lazy"></iframe>
-                        </div>
+                            <div class="video-container" itemscope itemtype="https://schema.org/VideoObject">
+                                <video-js id="my-video" class="video-js vjs-fluid vjs-big-play-centered" controls preload="auto">
+                                    <source src="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/876450612001/3eb4fb58-5b82-4bdb-84e8-c5416db6d945/10s/master.m3u8?fastly_token=NjZhNDhiZmRfMDUzZmQ1MjVmODFjNGJkNTNiYjZjMGRhZjJjNzliY2Y5ZjgwZWQ1MmZhNDUwN2ZlMGJjMTljN2RlN2Y2ZDVhZg%3D%3D" type="application/x-mpegURL">
+                                    <p itemprop="description">Thomas A.Q.T. Truong demonstrates groundbreaking AI Hand Action Recognition technology on BFM TV's Check Up Santé program.</p>
+                                </video-js>
+                                <meta itemprop="name" content="Thomas A.Q.T. Truong demonstrates AI Hand Action Recognition">
+                                <meta itemprop="duration" content="PT2M30S">
+                                <meta itemprop="thumbnailUrl" content="https://media.licdn.com/dms/image/C4E05AQG6xrZAwpiQSA/feedshare-thumbnail_720_1280/0/1671869430478?e=2147483647&v=beta&t=E5GoN38amPfShKKBq-LjJJTXBDC88tcQoAYSHG6nbyw">
+                                <meta itemprop="uploadDate" content="2022-12-17T00:00:00+01:00">
+                            </div>
+
                         <ul>
                             <li>Teaching AI hand actions with just 2 example videos instead of the historical 100</li>
                             <li>Simple yet powerful mechanism that substantially improves Machine Learning efficiency
@@ -2207,6 +2216,11 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            var player = videojs('my-video', {
+                fluid: true,
+                aspectRatio: '16:9'
+            });
+
             const pages = document.querySelectorAll('.page');
             const navLinks = document.querySelectorAll('a[data-page]');
             const menuToggle = document.querySelector('.menu-toggle');
