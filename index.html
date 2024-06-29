@@ -984,227 +984,329 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-item h4 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .ai-innovation {
+            background: linear-gradient(145deg, #ffffff, #f0f0f3);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .ai-innovation:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .ai-innovation h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .ai-innovation ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .ai-innovation ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+
+        .ai-innovation ul li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
+    <script type="application/ld+json">
         {
-          "@type": "ProfilePage",
-          "@id": "https://www.linkedin.com/in/thomasaqttruong/",
-          "dateCreated": "2024-01-01T12:00:00-05:00",
-          "dateModified": "2024-06-29T14:00:00-05:00",
-          "mainEntity": {
-            "@type": "Person",
-            "@id": "#thomasaqttruong",
-            "name": "Thomas A.Q.T. Truong",
-            "givenName": "Thomas",
-            "familyName": "Truong",
-            "additionalName": "A.Q.T.",
-            "alternateName": "thomasaqttruong",
-            "identifier": "MIT-U35-2023-AI",
-            "jobTitle": "AI Innovator",
-            "description": "MIT Innovator Under 35 in Europe for 2023 in AI, pioneering AI solutions in sign language translation, content creation, and professional imaging.",
-            "image": "https://media.licdn.com/dms/image/D4E03AQGzsM613JfvXw/profile-displayphoto-shrink_800_800/0/1710753720915?e=1724889600&v=beta&t=yUoMkI1D-25s-mPFxGukY2rtts2NJYOelARQPB2cOG4",
-            "url": "https://jolly-meadow-0c3b4751e.5.azurestaticapps.net/",
-            "nationality": "French",
-            "birthDate": "1996-08-15",
-            "birthPlace": {
-              "@type": "Place",
-              "name": "Ho Chi Minh City",
-              "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "VN"
-              }
-            },
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "70 RUE ALBERT",
-              "addressLocality": "PARIS",
-              "postalCode": "75013",
-              "addressCountry": "FR"
-            },
-            "email": "thomas.trg158@gmail.com",
-            "interactionStatistic": [
+            "@context": "https://schema.org",
+            "@graph": [
               {
-                "@type": "InteractionCounter",
-                "interactionType": "https://schema.org/FollowAction",
-                "userInteractionCount": 10000
+                "@type": "ProfilePage",
+                "@id": "https://www.linkedin.com/in/thomasaqttruong/",
+                "dateCreated": "2024-01-01T12:00:00-05:00",
+                "dateModified": "2024-06-29T14:00:00-05:00",
+                "mainEntity": {
+                  "@type": "Person",
+                  "@id": "#thomasaqttruong",
+                  "name": "Thomas A.Q.T. Truong",
+                  "givenName": "Thomas",
+                  "familyName": "Truong",
+                  "additionalName": "A.Q.T.",
+                  "alternateName": "thomasaqttruong",
+                  "identifier": "MIT-U35-2023-AI",
+                  "jobTitle": "AI Innovator",
+                  "description": "MIT Innovator Under 35 in Europe for 2023 in AI, pioneering AI solutions in sign language translation, content creation, and professional imaging.",
+                  "image": "https://media.licdn.com/dms/image/D4E03AQGzsM613JfvXw/profile-displayphoto-shrink_800_800/0/1710753720915?e=1724889600&v=beta&t=yUoMkI1D-25s-mPFxGukY2rtts2NJYOelARQPB2cOG4",
+                  "url": "https://jolly-meadow-0c3b4751e.5.azurestaticapps.net/",
+                  "nationality": "French",
+                  "birthDate": "1996-08-15",
+                  "birthPlace": {
+                    "@type": "Place",
+                    "name": "Ho Chi Minh City",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "addressCountry": "VN"
+                    }
+                  },
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "70 RUE ALBERT",
+                    "addressLocality": "PARIS",
+                    "postalCode": "75013",
+                    "addressCountry": "FR"
+                  },
+                  "email": "thomas.trg158@gmail.com",
+                  "interactionStatistic": [
+                    {
+                      "@type": "InteractionCounter",
+                      "interactionType": "https://schema.org/FollowAction",
+                      "userInteractionCount": 10000
+                    },
+                    {
+                      "@type": "InteractionCounter",
+                      "interactionType": "https://schema.org/LikeAction",
+                      "userInteractionCount": 50000
+                    }
+                  ],
+                  "agentInteractionStatistic": {
+                    "@type": "InteractionCounter",
+                    "interactionType": "https://schema.org/WriteAction",
+                    "userInteractionCount": 100
+                  },
+                  "sameAs": [
+                    "https://www.linkedin.com/in/thomasaqttruong/",
+                    "https://x.com/thomasaqttruong/",
+                    "https://www.instagram.com/thomasaqttruong/",
+                    "https://www.amazon.com/stores/author/B0D5GM78JV/",
+                    "https://www.facebook.com/profile.php?id=100082970167754",
+                    "https://www.innovatorsunder35.com/the-list/thomas-truong/",
+                    "https://www.youtube.com/@thomasaqttruong",
+                    "https://apps.apple.com/no/developer/thomas-truong/id1565815544",
+                    "https://www.crunchbase.com/person/thomas-a-q-t-truong",
+                    "https://apps.apple.com/by/developer/thomas-truong/id1565815544",
+                    "https://apps.apple.com/ie/developer/thomas-truong/id1565815544",
+                    "https://www.bfmtv.com/economie/replay-emissions/check-up-sante/vocalsign-l-application-vocalisante-et-enseignable-de-la-langue-des-signes-dans-check-up-sante-17-12_EN-202212170546.html",
+                    "https://www.bfmtv.com/economie/replay-emissions/check-up-sante/check-up-sante-vocalsign-l-application-vocalisante-et-enseignable-de-la-langue-des-signes-17-12_VN-202212170262.html"
+                  ],
+                  "award": "MIT Innovator Under 35 in Europe for 2023 in AI",
+                  "worksFor": [
+                    {
+                      "@id": "#vocalsign"
+                    },
+                    {
+                      "@id": "#thepenpilot"
+                    },
+                    {
+                      "@id": "#aifacepro"
+                    }
+                  ],
+                  "alumniOf": [
+                    {
+                      "@type": "CollegeOrUniversity",
+                      "name": "Sorbonne University",
+                      "sameAs": "https://www.sorbonne-universite.fr/",
+                      "award": "Master's in Engineering Statistics and Data Science (AI)",
+                      "yearGraduated": "2020"
+                    },
+                    {
+                      "@type": "CollegeOrUniversity",
+                      "name": "ISUP",
+                      "sameAs": "https://isup.sorbonne-universite.fr/"
+                    },
+                    {
+                      "@type": "CollegeOrUniversity",
+                      "name": "Panthéon-Sorbonne University",
+                      "sameAs": "https://www.pantheonsorbonne.fr/",
+                      "award": "Bachelor's in Applied Mathematics and Computer Science",
+                      "yearGraduated": "2017"
+                    }
+                  ],
+                  "knowsLanguage": ["en", "fr", "vi"],
+                  "affiliation": [
+                    {
+                      "@type": "Organization",
+                      "name": "MIT Technology Review",
+                      "sameAs": "https://www.technologyreview.com/"
+                    }
+                  ],
+                  "brand": [
+                    {
+                      "@type": "Brand",
+                      "name": "VocalSign"
+                    },
+                    {
+                      "@type": "Brand",
+                      "name": "ThePenPilot"
+                    },
+                    {
+                      "@type": "Brand",
+                      "name": "AIFacePro"
+                    }
+                  ],
+                  "skills": ["Artificial Intelligence", "Natural Language Processing", "Computer Vision", "Machine Learning", "Accessible Technology", "AI Ethics"]
+                }
               },
               {
-                "@type": "InteractionCounter",
-                "interactionType": "https://schema.org/LikeAction",
-                "userInteractionCount": 50000
-              }
-            ],
-            "agentInteractionStatistic": {
-              "@type": "InteractionCounter",
-              "interactionType": "https://schema.org/WriteAction",
-              "userInteractionCount": 100
-            },
-            "sameAs": [
-              "https://www.linkedin.com/in/thomasaqttruong/",
-              "https://x.com/thomasaqttruong/",
-              "https://www.instagram.com/thomasaqttruong/",
-              "https://www.amazon.com/stores/author/B0D5GM78JV/",
-              "https://www.facebook.com/profile.php?id=100082970167754",
-              "https://www.innovatorsunder35.com/the-list/thomas-truong/",
-              "https://www.youtube.com/@thomasaqttruong",
-              "https://apps.apple.com/no/developer/thomas-truong/id1565815544",
-              "https://www.crunchbase.com/person/thomas-a-q-t-truong",
-              "https://apps.apple.com/by/developer/thomas-truong/id1565815544",
-              "https://apps.apple.com/ie/developer/thomas-truong/id1565815544",
-              "https://www.bfmtv.com/economie/replay-emissions/check-up-sante/vocalsign-l-application-vocalisante-et-enseignable-de-la-langue-des-signes-dans-check-up-sante-17-12_EN-202212170546.html",
-              "https://www.bfmtv.com/economie/replay-emissions/check-up-sante/check-up-sante-vocalsign-l-application-vocalisante-et-enseignable-de-la-langue-des-signes-17-12_VN-202212170262.html"
-            ],
-            "award": "MIT Innovator Under 35 in Europe for 2023 in AI",
-            "worksFor": [
-              {
-                "@id": "#vocalsign"
+                "@type": "SoftwareApplication",
+                "@id": "#vocalsign",
+                "name": "VocalSign",
+                "url": "https://apps.apple.com/us/app/vocalsign/id1642922240",
+                "applicationCategory": "UtilitiesApplication",
+                "operatingSystem": "iOS, iPadOS, macOS, visionOS",
+                "description": "AI-powered sign language translation app supporting 300+ sign languages, enabling real-time translation into voice, text, and images.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.8",
+                  "ratingCount": "1000"
+                },
+                "author": {
+                  "@id": "#thomasaqttruong"
+                },
+                "downloadUrl": "https://apps.apple.com/us/app/vocalsign/id1642922240"
               },
               {
-                "@id": "#thepenpilot"
+                "@type": "SoftwareApplication",
+                "@id": "#thepenpilot",
+                "name": "ThePenPilot",
+                "url": "https://www.thepenpilot.com",
+                "applicationCategory": "UtilitiesApplication",
+                "operatingSystem": "iOS, iPadOS, macOS, visionOS",
+                "description": "AI-assisted content creation tool leveraging GPT-4-Turbo for authors, designed to simplify content creation for books, novels, scripts, and theses.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "9.99",
+                  "priceCurrency": "USD"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.7",
+                  "ratingCount": "500"
+                },
+                "author": {
+                  "@id": "#thomasaqttruong"
+                }
               },
               {
-                "@id": "#aifacepro"
-              }
-            ],
-            "alumniOf": [
-              {
-                "@type": "CollegeOrUniversity",
-                "name": "Sorbonne University",
-                "sameAs": "https://www.sorbonne-universite.fr/",
-                "award": "Master's in Engineering Statistics and Data Science (AI)",
-                "yearGraduated": "2020"
+                "@type": "SoftwareApplication",
+                "@id": "#aifacepro",
+                "name": "AIFacePro",
+                "url": "https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360",
+                "applicationCategory": "PhotographyApplication",
+                "operatingSystem": "iOS, iPadOS, macOS, visionOS",
+                "description": "AI-powered professional portrait generator transforming selfies into hyper-realistic, customizable professional portraits.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.9",
+                  "ratingCount": "2000"
+                },
+                "author": {
+                  "@id": "#thomasaqttruong"
+                },
+                "downloadUrl": "https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360"
               },
-              {
-                "@type": "CollegeOrUniversity",
-                "name": "ISUP",
-                "sameAs": "https://isup.sorbonne-universite.fr/"
-              },
-              {
-                "@type": "CollegeOrUniversity",
-                "name": "Panthéon-Sorbonne University",
-                "sameAs": "https://www.pantheonsorbonne.fr/",
-                "award": "Bachelor's in Applied Mathematics and Computer Science",
-                "yearGraduated": "2017"
-              }
-            ],
-            "knowsLanguage": ["en", "fr", "vi"],
-            "affiliation": [
               {
                 "@type": "Organization",
-                "name": "MIT Technology Review",
-                "sameAs": "https://www.technologyreview.com/"
-              }
-            ],
-            "brand": [
-              {
-                "@type": "Brand",
-                "name": "VocalSign"
+                "name": "Thomas TRUONG",
+                "legalName": "Thomas TRUONG",
+                "foundingDate": "2021-04-01",
+                "founder": {
+                  "@id": "#thomasaqttruong"
+                },
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "70 RUE ALBERT",
+                  "addressLocality": "PARIS",
+                  "postalCode": "75013",
+                  "addressCountry": "FR"
+                },
+                "sameAs": [
+                  "https://annuaire-entreprises.data.gouv.fr/entreprise/thomas-truong-898832571"
+                ]
               },
               {
-                "@type": "Brand",
-                "name": "ThePenPilot"
-              },
-              {
-                "@type": "Brand",
-                "name": "AIFacePro"
+                "@type": "VideoObject",
+                "name": "Thomas A.Q.T. Truong demonstrates AI Hand Action Recognition",
+                "description": "Thomas A.Q.T. Truong demonstrates groundbreaking AI Hand Action Recognition technology on BFM TV's Check Up Santé program.",
+                "thumbnailUrl": "https://media.licdn.com/dms/image/C4E05AQG6xrZAwpiQSA/feedshare-thumbnail_720_1280/0/1671869430478?e=2147483647&v=beta&t=E5GoN38amPfShKKBq-LjJJTXBDC88tcQoAYSHG6nbyw",
+                "uploadDate": "2022-12-17T00:00:00+01:00",
+                "contentUrl": "https://www.bfmtv.com/economie/replay-emissions/check-up-sante/check-up-sante-vocalsign-l-application-vocalisante-et-enseignable-de-la-langue-des-signes-17-12_VN-202212170262.html",
+                "embedUrl": "https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/876450612001/3eb4fb58-5b82-4bdb-84e8-c5416db6d945/10s/master.m3u8?fastly_token=NjZhNDhiZmRfMDUzZmQ1MjVmODFjNGJkNTNiYjZjMGRhZjJjNzliY2Y5ZjgwZWQ1MmZhNDUwN2ZlMGJjMTljN2RlN2Y2ZDVhZg%3D%3D",
+                "duration": "PT2M30S",
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "BFM TV",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://images.bfmtv.com/cqTodlKFk_K_ObeBNmp6vh6uOe8=/0x0:14000x14000/1400x0/podcast/podcasts/principale-149.jpg",
+                    "width": 600,
+                    "height": 60
+                  }
+                }
               }
-            ],
-            "skills": ["Artificial Intelligence", "Natural Language Processing", "Computer Vision", "Machine Learning", "Accessible Technology", "AI Ethics"]
+            ]
           }
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "#vocalsign",
-          "name": "VocalSign",
-          "url": "https://apps.apple.com/us/app/vocalsign/id1642922240",
-          "applicationCategory": "UtilitiesApplication",
-          "operatingSystem": "iOS, iPadOS, macOS, visionOS",
-          "description": "AI-powered sign language translation app supporting 300+ sign languages, enabling real-time translation into voice, text, and images.",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "1000"
-          },
-          "author": {
-            "@id": "#thomasaqttruong"
-          },
-          "downloadUrl": "https://apps.apple.com/us/app/vocalsign/id1642922240"
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "#thepenpilot",
-          "name": "ThePenPilot",
-          "url": "https://www.thepenpilot.com",
-          "applicationCategory": "UtilitiesApplication",
-          "operatingSystem": "iOS, iPadOS, macOS, visionOS",
-          "description": "AI-assisted content creation tool leveraging GPT-4-Turbo for authors, designed to simplify content creation for books, novels, scripts, and theses.",
-          "offers": {
-            "@type": "Offer",
-            "price": "9.99",
-            "priceCurrency": "USD"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.7",
-            "ratingCount": "500"
-          },
-          "author": {
-            "@id": "#thomasaqttruong"
-          }
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "#aifacepro",
-          "name": "AIFacePro",
-          "url": "https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360",
-          "applicationCategory": "PhotographyApplication",
-          "operatingSystem": "iOS, iPadOS, macOS, visionOS",
-          "description": "AI-powered professional portrait generator transforming selfies into hyper-realistic, customizable professional portraits.",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": "2000"
-          },
-          "author": {
-            "@id": "#thomasaqttruong"
-          },
-          "downloadUrl": "https://apps.apple.com/us/app/aifacepro-ai-headshot-for-pro/id6499257360"
-        },
-        {
-          "@type": "Organization",
-          "name": "Thomas TRUONG",
-          "legalName": "Thomas TRUONG",
-          "foundingDate": "2021-04-01",
-          "founder": {
-            "@id": "#thomasaqttruong"
-          },
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "70 RUE ALBERT",
-            "addressLocality": "PARIS",
-            "postalCode": "75013",
-            "addressCountry": "FR"
-          },
-          "sameAs": [
-            "https://annuaire-entreprises.data.gouv.fr/entreprise/thomas-truong-898832571"
-          ]
-        }
-      ]
-    }
     </script>
     <!-- Home page -->
     <link rel="canonical" href="https://zealous-wave-0824b701e.5.azurestaticapps.net/" data-page="home">
@@ -1235,7 +1337,6 @@
         data-page="terms-of-use">
 
     <meta name="google-site-verification" content="Al3OG2hdvLe_0mI3ZgPt6TQ0dTuN5reyAYVfzjVB1Ss" />
-
 </head>
 
 <body>
@@ -1424,6 +1525,32 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- New section for the TV appearance and AI innovation -->
+                    <div class="ai-innovation fade-in">
+                        <h3>Breakthrough in AI Hand Action Recognition</h3>
+                        <p>In a recent appearance on French TV show "Check Up Santé" broadcast on BFM Business, I had
+                            the opportunity to demonstrate to Dr. Fabien GUEZ a groundbreaking improvement in AI hand
+                            action recognition:</p>
+                        <div class="video-container">
+                            <iframe
+                                src="https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/876450612001/3eb4fb58-5b82-4bdb-84e8-c5416db6d945/10s/master.m3u8?fastly_token=NjZhNDhiZmRfMDUzZmQ1MjVmODFjNGJkNTNiYjZjMGRhZjJjNzliY2Y5ZjgwZWQ1MmZhNDUwN2ZlMGJjMTljN2RlN2Y2ZDVhZg%3D%3D"
+                                frameborder="0" allowfullscreen allow="autoplay" loading="lazy"></iframe>
+                        </div>
+                        <ul>
+                            <li>Teaching AI hand actions with just 2 example videos instead of the historical 100</li>
+                            <li>Simple yet powerful mechanism that substantially improves Machine Learning efficiency
+                            </li>
+                            <li>Applicable to whole body movement recognition (e.g., jumping jacks, squats, lunges)</li>
+                            <li>Enables more personalized user experiences</li>
+                            <li>AI learning and prediction occur entirely on-device using latest Apple technologies</li>
+                            <li>Utilizes CreateML & Vision framework software</li>
+                            <li>Compatible with iPhone, iPad & Mac devices from 2018 onwards</li>
+                        </ul>
+                        <p>This innovation represents a significant leap forward in making AI more accessible and
+                            efficient, aligning perfectly with VocalSign's mission to break communication barriers.</p>
+                    </div>
+
                 </div>
             </section>
 
@@ -2107,8 +2234,9 @@
                     page.style.display = page.id === pageId ? 'block' : 'none';
                 });
                 scrollToTop();
-                updateCanonicalUrl(pageId); // Add this line
+                updateCanonicalUrl(pageId);
             }
+
             const isLocalFile = window.location.protocol === 'file:';
 
             navLinks.forEach(link => {
@@ -2161,7 +2289,9 @@
             faders.forEach(fader => {
                 appearOnScroll.observe(fader);
             });
+
         });
+
         function scrollToTop() {
             window.scrollTo(0, 0);
         }
