@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://zealous-wave-0824b701e.5.azurestaticapps.net/</loc>
     <lastmod>2024-06-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://media.licdn.com/dms/image/D4E03AQGzsM613JfvXw/profile-displayphoto-shrink_800_800/0/1710753720915?e=1724889600&amp;v=beta&amp;t=yUoMkI1D-25s-mPFxGukY2rtts2NJYOelARQPB2cOG4</image:loc>
+      <image:title>Thomas A.Q.T. Truong - AI Innovator Portrait</image:title>
+      <image:caption>Thomas A.Q.T. Truong, MIT Innovator Under 35 in Europe for 2023 in AI</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://zealous-wave-0824b701e.5.azurestaticapps.net/about</loc>
@@ -17,6 +24,31 @@
     <lastmod>2024-06-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/53/b4/f0/53b4f0ed-e1c4-f280-c2a9-48fd47518fd9/AppIcon-1x_U007epad-85-220.png/540x540bb.jpg</image:loc>
+      <image:title>VocalSign App Icon</image:title>
+      <image:caption>AI-powered sign language translation app</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/67/42/b66742b7-a5fc-4090-8255-7ed9c3e97a93/AppIcon-0-0-1x_U007epad-0-85-220.png/540x540bb.jpg</image:loc>
+      <image:title>AIFacePro App Icon</image:title>
+      <image:caption>AI-powered professional portrait generator</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static.wixstatic.com/media/2df313_f82286bed20346488bda5bec97e1cd15~mv2.png/v1/fit/w_2500,h_1330,al_c/2df313_f82286bed20346488bda5bec97e1cd15~mv2.png</image:loc>
+      <image:title>ThePenPilot Logo</image:title>
+      <image:caption>AI-assisted content creation tool</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://media.licdn.com/dms/image/C4E05AQG6xrZAwpiQSA/feedshare-thumbnail_720_1280/0/1671869430478?e=2147483647&amp;v=beta&amp;t=E5GoN38amPfShKKBq-LjJJTXBDC88tcQoAYSHG6nbyw</video:thumbnail_loc>
+      <video:title>VocalSign Demo on BFM Business</video:title>
+      <video:description>Thomas A.Q.T. Truong demonstrates VocalSign, an AI-powered sign language translation app</video:description>
+      <video:content_loc>https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/876450612001/3eb4fb58-5b82-4bdb-84e8-c5416db6d945/10s/master.m3u8</video:content_loc>
+      <video:duration>150</video:duration>
+      <video:publication_date>2022-12-17T00:00:00+01:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://zealous-wave-0824b701e.5.azurestaticapps.net/achievements</loc>
@@ -48,45 +80,4 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-  <loc>https://zealous-wave-0824b701e.5.azurestaticapps.net/</loc>
-  <lastmod>2024-06-28</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>1.0</priority>
-  <image:image>
-    <image:loc>https://media.licdn.com/dms/image/D4E03AQGzsM613JfvXw/profile-displayphoto-shrink_800_800/0/1710753720915?e=1724889600&v=beta&t=yUoMkI1D-25s-mPFxGukY2rtts2NJYOelARQPB2cOG4</image:loc>
-    <image:title>Thomas A.Q.T. Truong - AI Innovator Portrait</image:title>
-    <image:caption>Thomas A.Q.T. Truong, MIT Innovator Under 35 in Europe for 2023 in AI</image:caption>
-  </image:image>
-</url>
-<url>
-  <loc>https://zealous-wave-0824b701e.5.azurestaticapps.net/innovations</loc>
-  <lastmod>2024-06-28</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.9</priority>
-  <image:image>
-    <image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/53/b4/f0/53b4f0ed-e1c4-f280-c2a9-48fd47518fd9/AppIcon-1x_U007epad-85-220.png/540x540bb.jpg</image:loc>
-    <image:title>VocalSign App Icon</image:title>
-    <image:caption>AI-powered sign language translation app</image:caption>
-  </image:image>
-  <image:image>
-    <image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/67/42/b66742b7-a5fc-4090-8255-7ed9c3e97a93/AppIcon-0-0-1x_U007epad-0-85-220.png/540x540bb.jpg</image:loc>
-    <image:title>AIFacePro App Icon</image:title>
-    <image:caption>AI-powered professional portrait generator</image:caption>
-  </image:image>
-  <image:image>
-    <image:loc>https://static.wixstatic.com/media/2df313_f82286bed20346488bda5bec97e1cd15~mv2.png/v1/fit/w_2500,h_1330,al_c/2df313_f82286bed20346488bda5bec97e1cd15~mv2.png</image:loc>
-    <image:title>ThePenPilot Logo</image:title>
-    <image:caption>AI-assisted content creation tool</image:caption>
-  </image:image>
-  <video:video>
-    <video:title>VocalSign Demo on BFM Business</video:title>
-    <video:description>Thomas A.Q.T. Truong demonstrates VocalSign, an AI-powered sign language translation app</video:description>
-    <video:content_loc>https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/876450612001/3eb4fb58-5b82-4bdb-84e8-c5416db6d945/10s/master.m3u8</video:content_loc>
-    <video:duration>150</video:duration>
-    <video:publication_date>2022-12-17T00:00:00+01:00</video:publication_date>
-    <video:family_friendly>yes</video:family_friendly>
-    <video:live>no</video:live>
-  </video:video>
-</url>
 </urlset>
